@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37be7639614b
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37bec307b632
+modified: 1624527129698
+created: 1624527129698
+url: "{{ base_url }}/wallet/create-assign-public-did"
+name: Create and Assign Public DID to Wallet
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129698
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

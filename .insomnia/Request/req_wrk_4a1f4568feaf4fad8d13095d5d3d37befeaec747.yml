@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37befeaec747
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37bee85a0f49
+modified: 1624527129744
+created: 1624527129744
+url: "{{ base_url }}/badges/revoke"
+name: Revoke Issued Credential for Connection ID
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129744
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37be1ddc3e6f
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37be6467baa3
+modified: 1624527129711
+created: 1624527129711
+url: "{{ base_url }}/member/respond"
+name: Respond to Proof Request
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129711
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

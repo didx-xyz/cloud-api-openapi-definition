@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37bee352b62e
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37be56b8e6bb
+modified: 1624527129721
+created: 1624527129721
+url: "{{ base_url }}/governance/write-approved-schema"
+name: Write Credential Definition to Ledger from Approved Schema
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129721
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37bee0771e05
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37beca838581
+modified: 1624527129677
+created: 1624527129677
+url: "{{ base_url }}/trusted_registry/{{ partner_id }}"
+name: Delete Trusted Partner from Trust Registry
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129677
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

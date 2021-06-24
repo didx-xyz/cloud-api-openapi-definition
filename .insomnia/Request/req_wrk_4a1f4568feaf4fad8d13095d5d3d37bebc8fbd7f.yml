@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37bebc8fbd7f
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37be3197ec41
+modified: 1624527129697
+created: 1624527129697
+url: "{{ base_url }}/schema"
+name: Write Schema and Credential Definition to Ledger
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129697
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

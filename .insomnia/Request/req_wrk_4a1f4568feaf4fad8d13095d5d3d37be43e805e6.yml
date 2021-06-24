@@ -1,0 +1,38 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37be43e805e6
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37bec307b632
+modified: 1624527129707
+created: 1624527129707
+url: "{{ base_url }}/wallet"
+name: Create a Wallet
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "wallet_key": "{{wallet_key}}",
+      "wallet_name": "{{wallet_name}}",
+      "label": "{{wallet_label}}",
+      "image_url": "{{wallet_image_url}}",
+      "public": "{{public_DID_bool}}"
+    }
+parameters: []
+headers:
+  - name: x-api-key
+    disabled: false
+    value: api_key
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129707
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

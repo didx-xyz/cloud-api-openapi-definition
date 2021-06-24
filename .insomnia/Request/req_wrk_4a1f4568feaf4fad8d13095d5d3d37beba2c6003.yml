@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37beba2c6003
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37beedffcdb7
+modified: 1624527129708
+created: 1624527129708
+url: "{{ base_url }}/consent/present"
+name: Present Consent Request
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129708
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

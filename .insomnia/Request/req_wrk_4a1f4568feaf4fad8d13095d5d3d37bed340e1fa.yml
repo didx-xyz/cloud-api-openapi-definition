@@ -1,0 +1,27 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37bed340e1fa
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37bec307b632
+modified: 1624527129705
+created: 1624527129705
+url: "{{ base_url }}/wallet/{{ wallet_id }}"
+name: Get a Wallet
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: x-api-key
+    disabled: false
+    value: api_key
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129705
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

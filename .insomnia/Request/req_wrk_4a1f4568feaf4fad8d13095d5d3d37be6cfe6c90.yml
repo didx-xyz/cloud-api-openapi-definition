@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37be6cfe6c90
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37beca838581
+modified: 1624527129678
+created: 1624527129678
+url: "{{ base_url }}/trust-registry"
+name: Retrieve Trusted Partner list from Trust Registry
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129678
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

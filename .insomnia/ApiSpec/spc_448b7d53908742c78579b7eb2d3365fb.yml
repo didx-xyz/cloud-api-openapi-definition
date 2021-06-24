@@ -1,0 +1,2760 @@
+_id: spc_448b7d53908742c78579b7eb2d3365fb
+type: ApiSpec
+parentId: wrk_4a1f4568feaf4fad8d13095d5d3d37be
+modified: 1624527135609
+created: 1624527135557
+fileName: Aries Cloud API 1.0
+contents: "openapi: 3.0.0\r
+
+  info:\r
+
+  \  title: Aries Cloud API\r
+
+  \  description: ''\r
+
+  \  contact: {}\r
+
+  \  version: '1.0'\r
+
+  servers:\r
+
+  - url: http://localhost:3021\r
+
+  \  variables: {}\r
+
+  - url: http://localhost:3021\r
+
+  \  variables: {}\r
+
+  - url: '{base_host}'\r
+
+  \  variables:\r
+
+  \    base_host:\r
+
+  \      default: DefaultParameterValue\r
+
+  - url: '{base_host}'\r
+
+  \  variables:\r
+
+  \    base_host:\r
+
+  \      default: DefaultParameterValue\r
+
+  paths:\r
+
+  \  /badges/revoke:\r
+
+  \    post:\r
+
+  \      tags:\r
+
+  \      - revoke\r
+
+  \      summary: Revoke Issued Credential for Connection ID\r
+
+  \      description: ''\r
+
+  \      operationId: RevokeIssuedCredentialforConnectionID\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /endorder/author/cancel:\r
+
+  \    post:\r
+
+  \      tags:\r
+
+  \      - endorser\r
+
+  \      summary: For Author to cancel a particular transaction request\r
+
+  \      description: ''\r
+
+  \      operationId: ForAuthortocancelaparticulartransactionrequest\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /endorser/reject:\r
+
+  \    post:\r
+
+  \      tags:\r
+
+  \      - endorser\r
+
+  \      summary: For Endorser to reject a particular transaction record\r
+
+  \      description: ''\r
+
+  \      operationId: ForEndorsertorejectaparticulartransactionrecord\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /endorser/endorse:\r
+
+  \    post:\r
+
+  \      tags:\r
+
+  \      - endorser\r
+
+  \      summary: For Endorser to endorse a particular transaction record\r
+
+  \      description: ''\r
+
+  \      operationId: ForEndorsertoendorseaparticulartransactionrecord\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /governance/resend/{tran_id}:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - governance\r
+
+  \      summary: For author to resend a transaction request\r
+
+  \      description: ''\r
+
+  \      operationId: Forauthortoresendatransactionrequest\r
+
+  \      parameters:\r
+
+  \      - name: tran_id\r
+
+  \        in: path\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /governance/{tran_id}:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - governance\r
+
+  \      summary: For author to send a transaction request\r
+
+  \      description: ''\r
+
+  \      operationId: Forauthortosendatransactionrequest\r
+
+  \      parameters:\r
+
+  \      - name: tran_id\r
+
+  \        in: path\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /governance/cancel/tran_id:\r
+
+  \    post:\r
+
+  \      tags:\r
+
+  \      - governance\r
+
+  \      summary: For Author to cancel a particular transaction request\r
+
+  \      description: ''\r
+
+  \      operationId: PostForAuthortocancelaparticulartransactionrequest\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /governance/write:\r
+
+  \    post:\r
+
+  \      tags:\r
+
+  \      - governance\r
+
+  \      summary: For Author to write an endorsed transaction to the ledger\r
+
+  \      description: ''\r
+
+  \      operationId: ForAuthortowriteanendorsedtransactiontotheledger\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /governance/trusted-partner-list:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - governance\r
+
+  \      summary: Retrieve Trusted Partner List\r
+
+  \      description: ''\r
+
+  \      operationId: RetrieveTrustedPartnerList\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /governance/schemas:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - governance\r
+
+  \      summary: Retrieve Approved Schema List\r
+
+  \      description: ''\r
+
+  \      operationId: RetrieveApprovedSchemaList\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /governance/write-approved-schema:\r
+
+  \    post:\r
+
+  \      tags:\r
+
+  \      - governance\r
+
+  \      summary: Write Credential Definition to Ledger from Approved Schema\r
+
+  \      description: ''\r
+
+  \      operationId: WriteCredentialDefinitiontoLedgerfromApprovedSchema\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /health/agent:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - diagnostics\r
+
+  \      summary: Get Metrics for Agent\r
+
+  \      description: ''\r
+
+  \      operationId: GetMetricsforAgent\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /health:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - diagnostics\r
+
+  \      summary: Get Health of Aries Cloud API\r
+
+  \      description: ''\r
+
+  \      operationId: GetHealthofAriesCloudAPI\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /connections/create-invitation:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - connection\r
+
+  \      summary: Create Invitation Request\r
+
+  \      description: ''\r
+
+  \      operationId: CreateInvitationRequest\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /connections/{conn_id}/accept-invitation:\r
+
+  \    post:\r
+
+  \      tags:\r
+
+  \      - connection\r
+
+  \      summary: Accept Invitation Request\r
+
+  \      description: ''\r
+
+  \      operationId: AcceptInvitationRequest\r
+
+  \      parameters:\r
+
+  \      - name: conn_id\r
+
+  \        in: path\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /connections:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - connection\r
+
+  \      summary: Get All Connections\r
+
+  \      description: ''\r
+
+  \      operationId: GetAllConnections\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /connections/{connection_id}:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - connection\r
+
+  \      summary: Get a Connection by ID\r
+
+  \      description: ''\r
+
+  \      operationId: GetaConnectionbyID\r
+
+  \      parameters:\r
+
+  \      - name: x-api-key\r
+
+  \        in: header\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \          example: api_key\r
+
+  \      - name: connection_id\r
+
+  \        in: path\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /member/respond:\r
+
+  \    post:\r
+
+  \      tags:\r
+
+  \      - member\r
+
+  \      summary: Respond to Proof Request\r
+
+  \      description: ''\r
+
+  \      operationId: RespondtoProofRequest\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /consent/issue:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - consent_management\r
+
+  \      summary: Issue Consent Receipt\r
+
+  \      description: ''\r
+
+  \      operationId: IssueConsentReceipt\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /consent/accept:\r
+
+  \    post:\r
+
+  \      tags:\r
+
+  \      - consent_management\r
+
+  \      summary: Accept Consent Request\r
+
+  \      description: ''\r
+
+  \      operationId: AcceptConsentRequest\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /consent/present:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - consent_management\r
+
+  \      summary: Present Consent Request\r
+
+  \      description: ''\r
+
+  \      operationId: PresentConsentRequest\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /wallet:\r
+
+  \    post:\r
+
+  \      tags:\r
+
+  \      - wallet\r
+
+  \      summary: Create a Wallet\r
+
+  \      description: \"This is the call we'll use to create a subwallet.
+  \\n\\n* wallet_key - the key used to encrypt/decrypt the wallet\\n*
+  wallet_name - the name of the wallet (cannot be changed)\\n* label - the label
+  of the wallet\\n* image_url - the url of the iamge associated with the wallet
+  (profile picture)\\n\\nIf a public did is required then include the
+  assign_public_did query parameter as true\\n\"\r
+
+  \      operationId: CreateaWallet\r
+
+  \      parameters:\r
+
+  \      - name: x-api-key\r
+
+  \        in: header\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \          example: api_key\r
+
+  \      requestBody:\r
+
+  \        description: ''\r
+
+  \        content:\r
+
+  \          application/json:\r
+
+  \            schema:\r
+
+  \              $ref: '#/components/schemas/CreateaWalletRequest'\r
+
+  \            example:\r
+
+  \              wallet_key: '{{wallet_key}}'\r
+
+  \              wallet_name: '{{wallet_name}}'\r
+
+  \              label: '{{wallet_label}}'\r
+
+  \              image_url: '{{wallet_image_url}}'\r
+
+  \              public: '{{public_DID_bool}}'\r
+
+  \        required: true\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /wallet/{wallet_id}:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - wallet\r
+
+  \      summary: Get a Wallet\r
+
+  \      description: If details of a specific wallet is required this is the
+  call to do that - it's analogous to the /multitenancy/wallet calls on acapy\r
+
+  \      operationId: GetaWallet\r
+
+  \      parameters:\r
+
+  \      - name: x-api-key\r
+
+  \        in: header\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \          example: api_key\r
+
+  \      - name: wallet_id\r
+
+  \        in: path\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \    put:\r
+
+  \      tags:\r
+
+  \      - wallet\r
+
+  \      summary: Update a Wallet\r
+
+  \      description: Can be used to update the image url or the label of a
+  wallet\r
+
+  \      operationId: UpdateaWallet\r
+
+  \      parameters:\r
+
+  \      - name: x-api-key\r
+
+  \        in: header\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \          example: api_key\r
+
+  \      - name: wallet_id\r
+
+  \        in: path\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \      requestBody:\r
+
+  \        description: ''\r
+
+  \        content:\r
+
+  \          application/json:\r
+
+  \            schema:\r
+
+  \              $ref: '#/components/schemas/UpdateaWalletRequest'\r
+
+  \            example:\r
+
+  \              image_url: https://aries.ca/images/sample.png\r
+
+  \              label: Alice\r
+
+  \        required: true\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \    delete:\r
+
+  \      tags:\r
+
+  \      - wallet\r
+
+  \      summary: Remove a Wallet\r
+
+  \      description: Used to delete a wallet. Can't see this being used
+  much\r
+
+  \      operationId: RemoveaWallet\r
+
+  \      parameters:\r
+
+  \      - name: x-api-key\r
+
+  \        in: header\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \          example: api_key\r
+
+  \      - name: wallet_id\r
+
+  \        in: path\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /admin/wallet/{wallet_id}/token:\r
+
+  \    post:\r
+
+  \      tags:\r
+
+  \      - wallet\r
+
+  \      summary: Get Auth Token for Sub Wallet\r
+
+  \      description: >-\r
+
+  \        This is the call that will be used once the user has authenticated
+  to get the jwt to use for that user agaist the Aries cloud api.\r
+
+  \r
+
+  \r
+
+  \        The secret that was passed in when the wallet was created is
+  required. I would suggest this is a random value that is generated when the
+  user is created and stored along with the user. It is very sensitive as
+  without it the user will be unable to access their wallet. It's the key to the
+  wallet.\r
+
+  \      operationId: GetAuthTokenforSubWallet\r
+
+  \      parameters:\r
+
+  \      - name: x-api-key\r
+
+  \        in: header\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \          example: api_key\r
+
+  \      - name: wallet_id\r
+
+  \        in: path\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \      requestBody:\r
+
+  \        description: ''\r
+
+  \        content:\r
+
+  \          application/json:\r
+
+  \            schema:\r
+
+  \              $ref:
+  '#/components/schemas/GetAuthTokenforSubWalletRequest'\r
+
+  \            example:\r
+
+  \              wallet_key: MySecretKey123\r
+
+  \        required: true\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /wallets:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - wallet\r
+
+  \      summary: Query Subwallets\r
+
+  \      description: ''\r
+
+  \      operationId: QuerySubwallets\r
+
+  \      parameters:\r
+
+  \      - name: x-api-key\r
+
+  \        in: header\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \          example: api_key\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /wallet/assign_public_did:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - wallet\r
+
+  \      summary: Assign Public DID to Wallet\r
+
+  \      description: ''\r
+
+  \      operationId: AssignPublicDIDtoWallet\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /wallet/create-assign-public-did:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - wallet\r
+
+  \      summary: Create and Assign Public DID to Wallet\r
+
+  \      description: ''\r
+
+  \      operationId: CreateandAssignPublicDIDtoWallet\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /schema:\r
+
+  \    post:\r
+
+  \      tags:\r
+
+  \      - schema_registry\r
+
+  \      summary: Write Schema and Credential Definition to Ledger\r
+
+  \      description: ''\r
+
+  \      operationId: WriteSchemaandCredentialDefinitiontoLedger\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \    delete:\r
+
+  \      tags:\r
+
+  \      - schema_registry\r
+
+  \      summary: Delete Approved Schema from Schema Registry\r
+
+  \      description: ''\r
+
+  \      operationId: DeleteApprovedSchemafromSchemaRegistry\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /schema/write:\r
+
+  \    post:\r
+
+  \      tags:\r
+
+  \      - schema_registry\r
+
+  \      summary: Write Credential Definition for Schema ID to Ledger\r
+
+  \      description: ''\r
+
+  \      operationId: WriteCredentialDefinitionforSchemaIDtoLedger\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /schemas:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - schema_registry\r
+
+  \      summary: Retrieve Approved Schema list from Schema Registry\r
+
+  \      description: ''\r
+
+  \      operationId: RetrieveApprovedSchemalistfromSchemaRegistry\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /schema/{schema_id}:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - schema_registry\r
+
+  \      summary: Retrieve Approved Schema from Schema Registry\r
+
+  \      description: ''\r
+
+  \      operationId: RetrieveApprovedSchemafromSchemaRegistry\r
+
+  \      parameters:\r
+
+  \      - name: schema_id\r
+
+  \        in: path\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \    put:\r
+
+  \      tags:\r
+
+  \      - schema_registry\r
+
+  \      summary: Update Approved Schema in Schema Registry\r
+
+  \      description: ''\r
+
+  \      operationId: UpdateApprovedSchemainSchemaRegistry\r
+
+  \      parameters:\r
+
+  \      - name: schema_id\r
+
+  \        in: path\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /schema/add:\r
+
+  \    post:\r
+
+  \      tags:\r
+
+  \      - schema_registry\r
+
+  \      summary: Add Approved Schema to Schema Registry\r
+
+  \      description: ''\r
+
+  \      operationId: AddApprovedSchematoSchemaRegistry\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /trust-registry:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - trust_registry\r
+
+  \      summary: Retrieve Trusted Partner list from Trust Registry\r
+
+  \      description: ''\r
+
+  \      operationId: RetrieveTrustedPartnerlistfromTrustRegistry\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /trusted_registry/{partner_id}:\r
+
+  \    delete:\r
+
+  \      tags:\r
+
+  \      - trust_registry\r
+
+  \      summary: Delete Trusted Partner from Trust Registry\r
+
+  \      description: ''\r
+
+  \      operationId: DeleteTrustedPartnerfromTrustRegistry\r
+
+  \      parameters:\r
+
+  \      - name: partner_id\r
+
+  \        in: path\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /trusted-registry:\r
+
+  \    post:\r
+
+  \      tags:\r
+
+  \      - trust_registry\r
+
+  \      summary: Add Trusted Partner to Trust Registry\r
+
+  \      description: ''\r
+
+  \      operationId: AddTrustedPartnertoTrustRegistry\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /trusted-registry/{id}:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - trust_registry\r
+
+  \      summary: Retrieve Trusted Partner from Trust Registry\r
+
+  \      description: ''\r
+
+  \      operationId: RetrieveTrustedPartnerfromTrustRegistry\r
+
+  \      parameters:\r
+
+  \      - name: id\r
+
+  \        in: path\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /trusted-registry/{trusted-id}:\r
+
+  \    put:\r
+
+  \      tags:\r
+
+  \      - trust_registry\r
+
+  \      summary: Update Trusted Partner in Trust Registry\r
+
+  \      description: ''\r
+
+  \      operationId: UpdateTrustedPartnerinTrustRegistry\r
+
+  \      parameters:\r
+
+  \      - name: trusted-id\r
+
+  \        in: path\r
+
+  \        description: ''\r
+
+  \        required: true\r
+
+  \        style: simple\r
+
+  \        schema:\r
+
+  \          type: string\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /message/send:\r
+
+  \    post:\r
+
+  \      tags:\r
+
+  \      - messaging\r
+
+  \      summary: Send Basic Message to Connection\r
+
+  \      description: ''\r
+
+  \      operationId: SendBasicMessagetoConnection\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /credential/issue:\r
+
+  \    post:\r
+
+  \      tags:\r
+
+  \      - issue\r
+
+  \      summary: Issue Credential to Connection ID\r
+
+  \      description: ''\r
+
+  \      operationId: IssueCredentialtoConnectionID\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /proof/rqeuest:\r
+
+  \    post:\r
+
+  \      tags:\r
+
+  \      - verify\r
+
+  \      summary: Request Proof from Connection ID\r
+
+  \      description: ''\r
+
+  \      operationId: RequestProoffromConnectionID\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  \  /proof/verify:\r
+
+  \    get:\r
+
+  \      tags:\r
+
+  \      - verify\r
+
+  \      summary: Verify Proof Presentation\r
+
+  \      description: ''\r
+
+  \      operationId: VerifyProofPresentation\r
+
+  \      parameters: []\r
+
+  \      responses:\r
+
+  \        '200':\r
+
+  \          description: ''\r
+
+  \          headers: {}\r
+
+  \          content:\r
+
+  \            text/plain:\r
+
+  \              schema:\r
+
+  \                type: object\r
+
+  \      deprecated: false\r
+
+  \      servers:\r
+
+  \      - url: http://localhost:3021\r
+
+  \        variables: {}\r
+
+  \      - url: '{base_host}'\r
+
+  \        variables:\r
+
+  \          base_host:\r
+
+  \            default: DefaultParameterValue\r
+
+  components:\r
+
+  \  schemas:\r
+
+  \    CreateaWalletRequest:\r
+
+  \      title: CreateaWalletRequest\r
+
+  \      required:\r
+
+  \      - wallet_key\r
+
+  \      - wallet_name\r
+
+  \      - label\r
+
+  \      - image_url\r
+
+  \      - public\r
+
+  \      type: object\r
+
+  \      properties:\r
+
+  \        wallet_key:\r
+
+  \          type: string\r
+
+  \        wallet_name:\r
+
+  \          type: string\r
+
+  \        label:\r
+
+  \          type: string\r
+
+  \        image_url:\r
+
+  \          type: string\r
+
+  \        public:\r
+
+  \          type: string\r
+
+  \      example:\r
+
+  \        wallet_key: '{{wallet_key}}'\r
+
+  \        wallet_name: '{{wallet_name}}'\r
+
+  \        label: '{{wallet_label}}'\r
+
+  \        image_url: '{{wallet_image_url}}'\r
+
+  \        public: '{{public_DID_bool}}'\r
+
+  \    UpdateaWalletRequest:\r
+
+  \      title: UpdateaWalletRequest\r
+
+  \      required:\r
+
+  \      - image_url\r
+
+  \      - label\r
+
+  \      type: object\r
+
+  \      properties:\r
+
+  \        image_url:\r
+
+  \          type: string\r
+
+  \        label:\r
+
+  \          type: string\r
+
+  \      example:\r
+
+  \        image_url: https://aries.ca/images/sample.png\r
+
+  \        label: Alice\r
+
+  \    GetAuthTokenforSubWalletRequest:\r
+
+  \      title: GetAuthTokenforSubWalletRequest\r
+
+  \      required:\r
+
+  \      - wallet_key\r
+
+  \      type: object\r
+
+  \      properties:\r
+
+  \        wallet_key:\r
+
+  \          type: string\r
+
+  \      example:\r
+
+  \        wallet_key: MySecretKey123\r
+
+  \  securitySchemes:\r
+
+  \    httpBearer:\r
+
+  \      type: http\r
+
+  \      scheme: bearer\r
+
+  security:\r
+
+  - httpBearer: []\r
+
+  tags:\r
+
+  - name: revoke\r
+
+  \  description: ''\r
+
+  - name: endorser\r
+
+  \  description: ''\r
+
+  - name: governance\r
+
+  \  description: ''\r
+
+  - name: diagnostics\r
+
+  \  description: ''\r
+
+  - name: connection\r
+
+  \  description: ''\r
+
+  - name: member\r
+
+  \  description: ''\r
+
+  - name: consent_management\r
+
+  \  description: ''\r
+
+  - name: badges\r
+
+  \  description: ''\r
+
+  - name: wallet\r
+
+  \  description: ''\r
+
+  - name: schema_registry\r
+
+  \  description: ''\r
+
+  - name: trust_registry\r
+
+  \  description: ''\r
+
+  - name: messaging\r
+
+  \  description: ''\r
+
+  - name: issue\r
+
+  \  description: ''\r
+
+  - name: verify\r
+
+  \  description: ''\r
+
+  - name: trust_ecosystem_admin\r
+
+  \  description: ''\r
+
+  - name: provider\r
+
+  \  description: ''\r\n"
+contentType: yaml

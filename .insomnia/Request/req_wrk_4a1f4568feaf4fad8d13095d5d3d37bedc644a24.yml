@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37bedc644a24
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37be7d481ffd
+modified: 1624527129720
+created: 1624527129720
+url: "{{ base_url }}/health/agent"
+name: Get Metrics for Agent
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129720
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

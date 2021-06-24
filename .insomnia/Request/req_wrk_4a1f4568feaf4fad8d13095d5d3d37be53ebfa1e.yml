@@ -1,0 +1,35 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37be53ebfa1e
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37bec307b632
+modified: 1624527129704
+created: 1624527129704
+url: "{{ base_url }}/wallet/{{ wallet_id }}"
+name: Update a Wallet
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "image_url": "https://aries.ca/images/sample.png",
+      "label": "Alice"
+    }
+parameters: []
+headers:
+  - name: x-api-key
+    disabled: false
+    value: api_key
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129704
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

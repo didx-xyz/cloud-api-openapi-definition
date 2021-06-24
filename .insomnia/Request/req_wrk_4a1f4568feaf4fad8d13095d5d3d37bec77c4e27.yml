@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37bec77c4e27
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37be13cbac99
+modified: 1624527129729
+created: 1624527129729
+url: "{{ base_url }}/endorser/endorse"
+name: For Endorser to endorse a particular transaction record
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129729
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

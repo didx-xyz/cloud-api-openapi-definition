@@ -1,0 +1,27 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37be93314ffb
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37be814605c6
+modified: 1624527129714
+created: 1624527129714
+url: "{{ base_url }}/connections/{{ connection_id }}"
+name: Get a Connection by ID
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: x-api-key
+    disabled: false
+    value: api_key
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129714
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

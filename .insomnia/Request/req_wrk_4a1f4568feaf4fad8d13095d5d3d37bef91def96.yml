@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37bef91def96
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37bed0b1131c
+modified: 1624527129672
+created: 1624527129672
+url: "{{ base_url }}/message/send"
+name: Send Basic Message to Connection
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129672
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

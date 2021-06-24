@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37be5d263d7a
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37beca838581
+modified: 1624527129675
+created: 1624527129675
+url: "{{ base_url }}/trusted-registry"
+name: Add Trusted Partner to Trust Registry
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129675
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

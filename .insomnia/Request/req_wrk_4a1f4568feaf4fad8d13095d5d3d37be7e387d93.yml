@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37be7e387d93
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37beedffcdb7
+modified: 1624527129709
+created: 1624527129709
+url: "{{ base_url }}/consent/accept"
+name: Accept Consent Request
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129709
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

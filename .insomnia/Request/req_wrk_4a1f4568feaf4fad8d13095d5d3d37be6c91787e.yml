@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37be6c91787e
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37be86a4261d
+modified: 1624527129665
+created: 1624527129665
+url: "{{ base_url }}/proof/verify"
+name: Verify Proof Presentation
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129665
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37be13df3745
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37be56b8e6bb
+modified: 1624527129728
+created: 1624527129728
+url: "{{ base_url }}/governance/resend/{{ tran_id }}"
+name: For author to resend a transaction request
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129728
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

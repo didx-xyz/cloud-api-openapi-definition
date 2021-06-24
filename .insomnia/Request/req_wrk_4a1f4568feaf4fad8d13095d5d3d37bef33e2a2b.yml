@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37bef33e2a2b
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37beedffcdb7
+modified: 1624527129710
+created: 1624527129710
+url: "{{ base_url }}/consent/issue"
+name: Issue Consent Receipt
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129710
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

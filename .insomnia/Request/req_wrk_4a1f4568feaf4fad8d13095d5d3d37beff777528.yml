@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37beff777528
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37be56b8e6bb
+modified: 1624527129725
+created: 1624527129725
+url: "{{ base_url }}/governance/write"
+name: For Author to write an endorsed transaction to the ledger
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129725
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

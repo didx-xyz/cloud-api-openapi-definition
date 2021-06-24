@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37be3e316e16
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37be86a4261d
+modified: 1624527129668
+created: 1624527129668
+url: "{{ base_url }}/proof/rqeuest"
+name: Request Proof from Connection ID
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129668
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

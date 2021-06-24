@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37be1f3bb1fe
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37be56b8e6bb
+modified: 1624527129723
+created: 1624527129723
+url: "{{ base_url }}/governance/schemas"
+name: Retrieve Approved Schema List
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129723
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

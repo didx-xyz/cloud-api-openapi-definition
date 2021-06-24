@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37be72a58507
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37be3197ec41
+modified: 1624527129681
+created: 1624527129681
+url: "{{ base_url }}/schema/add"
+name: Add Approved Schema to Schema Registry
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129681
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

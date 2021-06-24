@@ -1,0 +1,24 @@
+_id: req_wrk_4a1f4568feaf4fad8d13095d5d3d37be3054b24d
+type: Request
+parentId: fld_wrk_4a1f4568feaf4fad8d13095d5d3d37be814605c6
+modified: 1624527129716
+created: 1624527129716
+url: "{{ base_url }}/connections"
+name: Get All Connections
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1624527129716
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
